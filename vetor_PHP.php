@@ -20,9 +20,12 @@ $conta3 = [
     'DataNasc'=> '126842364',
 ];
 
+$array = [$conta1, $conta2, $conta3];
 
-    echo 'o Titular da conta 1 e: '.$conta1['Titular'].PHP_EOL;
-    echo 'o Titular da conta 2 e: '.$conta2['Titular'].PHP_EOL;
-    echo 'o Titular da conta 3 e: '.$conta3['Titular'].PHP_EOL;
-
+$cont = 1;
+foreach ($array as $conta){
+    $cont += 1;
+    echo "A o Titular da conta $cont e: " . $conta['Titular'].PHP_EOL;
+   
+}
 
